@@ -1,0 +1,22 @@
+{
+  "name": "new_site",
+  "version": "1.0.0",
+  "description": "Full-Stack web application to simulate a real world dev project idk lol",
+  "main": "index.js",
+  "scripts": {
+    "test": "boom"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalina-edwards/New_Site.git"
+  },
+  "author": "Kalina Edwards and constsync",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalina-edwards/New_Site/issues"
+  },
+  "homepage": "https://github.com/kalina-edwards/New_Site#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
