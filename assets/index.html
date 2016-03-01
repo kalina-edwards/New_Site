@@ -3,18 +3,17 @@
 <head>
 	<title>New Site</title>
     <meta charset="utf-8">
+	<link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body ng-app="app" ng-controller="mainCtrl">
 
 <nav>
 	<ul>
-	  <li id="home-lnk">Home</li>
-	  <li id="about-lnk">About</li>
-	  <li id="contact-lnk">Contact</li>
+	  <li id="home-lnk" ng-click="backHome()">Home</li>
+	  <li id="about-lnk" ng-click="aboutView()">About</li>
+	  <li id="contact-lnk" ng-click="contactView()">Contact</li>
 	</ul>
 </nav>
 
