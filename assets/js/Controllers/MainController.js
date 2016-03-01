@@ -7,12 +7,12 @@ app.controller('mainCtrl', ["$scope", function ($scope) {
 
     $scope.aboutView = function () {
         console.log('about view');
-        window.location.href = '/views/about.html';
+        window.location.href = 'about.html';
     };
 
     $scope.contactView = function () {
         console.log('contact view');
-        window.location.href = '/views/contact.html';
+        window.location.href = 'contact.html';
     }
 
 }]);

@@ -1,20 +1,5 @@
 body {
 	text-align: center;
-	margin-left: 20%;
-	margin-right: 20%;
-
 }
 
-nav {
-    display: inline-block;
-    list-style-type: none;
-    border: 2px solid black;
 
-    text-align: center;
-    text-decoration: none;
-    padding: 10px;
-}
-
-nav li {
-    display: inline;
-}
