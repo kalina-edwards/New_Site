@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e6f0425-7371-40a8-9354-075f2d9bef4e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/contact.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/css/about.css" afterPath="$PROJECT_DIR$/assets/stylesheets/about.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/css/contact.css" afterPath="$PROJECT_DIR$/assets/stylesheets/contact.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/css/food.jpeg" afterPath="$PROJECT_DIR$/assets/imgs/food.jpeg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/css/index.css" afterPath="$PROJECT_DIR$/assets/stylesheets/index.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/css/nav.css" afterPath="$PROJECT_DIR$/assets/stylesheets/nav.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/css/normalize.css" afterPath="$PROJECT_DIR$/assets/stylesheets/normalize.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/css/salad.jpg" afterPath="$PROJECT_DIR$/assets/imgs/salad.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/css/stylesheet.css" afterPath="$PROJECT_DIR$/assets/stylesheets/stylesheet.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/js/Controllers/GlobalController.js" afterPath="$PROJECT_DIR$/assets/javascripts/Controllers/GlobalController.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/js/app.js" afterPath="$PROJECT_DIR$/assets/javascripts/app.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/js/vendor/angular-route.js" afterPath="$PROJECT_DIR$/assets/javascripts/vendor/angular-route.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/js/vendor/angular.js" afterPath="$PROJECT_DIR$/assets/javascripts/vendor/angular.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/index.html" afterPath="$PROJECT_DIR$/assets/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/javascripts/app.js" afterPath="$PROJECT_DIR$/assets/javascripts/app.js" />
     </list>
     <ignored path="New_Site.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,8 +30,18 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.37787515">
-                  <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.4928806">
+                  <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/javascripts/app.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -88,8 +84,8 @@
           <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.032858707">
-                  <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.34501642">
+                  <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
                   <folding />
                 </state>
               </provider>
@@ -145,11 +141,12 @@
         <option value="$PROJECT_DIR$/assets/test.html" />
         <option value="$PROJECT_DIR$/assets/js/Controllers/GlobalController.js" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/assets/index.html" />
         <option value="$PROJECT_DIR$/assets/views/about.html" />
         <option value="$PROJECT_DIR$/assets/views/contact.html" />
         <option value="$PROJECT_DIR$/assets/javascripts/controllers/GlobalController.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/assets/javascripts/app.js" />
+        <option value="$PROJECT_DIR$/assets/index.html" />
       </list>
     </option>
   </component>
@@ -195,6 +192,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="New_Site" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="New_Site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="New_Site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -288,9 +295,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-257" width="1916" height="1057" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1937698" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1937698" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32815734" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -620,14 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/javascripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.048231512">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/imgs/salad.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -662,14 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37787515">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/javascripts/controllers/GlobalController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -678,10 +669,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/javascripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4928806">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.032858707">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.34501642">
+          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
           <folding />
         </state>
       </provider>
