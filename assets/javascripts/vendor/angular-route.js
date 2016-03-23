@@ -206,7 +206,7 @@ function $RouteProvider() {
     * Normalizes the given path, returning a regular expression
     * and the original path.
     *
-    * Inspired by pathRexp in visionmedia/express/lib/utils.js.
+    * Inspired by pathRexp in visionmedia/express/lib/utils.javascripts.
     */
   function pathRegExp(path, opts) {
     var insensitive = opts.caseInsensitiveMatch,
@@ -540,7 +540,7 @@ function $RouteProvider() {
      * Check if the route matches the current url.
      *
      * Inspired by match in
-     * visionmedia/express/lib/router/router.js.
+     * visionmedia/express/lib/router/router.javascripts.
      */
     function switchRouteMatcher(on, route) {
       var keys = route.keys,
@@ -951,7 +951,7 @@ function ngViewFactory($route, $anchorScroll, $animate) {
             var current = $route.current;
 
             // Note: This will also link all children of ng-view that were contained in the original
-            // html. If that content contains Controllers, ... they could pollute/change the scope.
+            // html. If that content contains controllers, ... they could pollute/change the scope.
             // However, using ng-view on an element with additional content does not make sense...
             // Note: We can't remove them in the cloneAttchFn of $transclude as that
             // function is called before linking the content, which would apply child

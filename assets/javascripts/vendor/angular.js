@@ -3012,7 +3012,7 @@ function jqLiteInheritedData(element, name, value) {
 
     // If dealing with a document fragment node with a host element, and no parent, use the host
     // element as the parent. This enables directives within a Shadow DOM or polyfilled Shadow DOM
-    // to lookup parent Controllers.
+    // to lookup parent controllers.
     element = element.parentNode || (element.nodeType === NODE_TYPE_DOCUMENT_FRAGMENT && element.host);
   }
 }
@@ -4895,7 +4895,7 @@ var $$CoreAnimateRunnerProvider = function() {
 };
 
 // this is prefixed with Core since it conflicts with
-// the animateQueueProvider defined in ngAnimate/animateQueue.js
+// the animateQueueProvider defined in ngAnimate/animateQueue.javascripts
 var $$CoreAnimateQueueProvider = function() {
   var postDigestQueue = new HashMap();
   var postDigestElements = [];
@@ -5026,7 +5026,7 @@ var $AnimateProvider = ['$provide', function($provide) {
    *
    *   Make sure to trigger the `doneFunction` once the animation is fully complete.
    *
-   * ```js
+   * ```javascripts
    *   return {
    *     //enter, leave, move signature
    *     eventFn : function(element, done, options) {
@@ -5127,7 +5127,7 @@ var $AnimateProvider = ['$provide', function($provide) {
        *    has fired on the given element or among any of its children. Once the listener is fired, the provided callback
        *    is fired with the following params:
        *
-       * ```js
+       * ```javascripts
        * $animate.on('enter', container,
        *    function callback(element, phase) {
        *      // cool we detected an enter animation within the container
@@ -5154,7 +5154,7 @@ var $AnimateProvider = ['$provide', function($provide) {
        * @description Deregisters an event listener based on the event which has been associated with the provided element. This method
        * can be used in three different ways depending on the arguments:
        *
-       * ```js
+       * ```javascripts
        * // remove all the animation event listeners listening for `enter`
        * $animate.off('enter');
        *
@@ -5198,7 +5198,7 @@ var $AnimateProvider = ['$provide', function($provide) {
        * @description Used to get and set whether animations are enabled or not on the entire application or on an element and its children. This
        * function can be called in four ways:
        *
-       * ```js
+       * ```javascripts
        * // returns true or false
        * $animate.enabled();
        *
@@ -8029,7 +8029,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
             childTranscludeFn = compile($template, transcludeFn, terminalPriority,
                                         replaceDirective && replaceDirective.name, {
                                           // Don't pass in:
-                                          // - controllerDirectives - otherwise we'll create duplicates Controllers
+                                          // - controllerDirectives - otherwise we'll create duplicates controllers
                                           // - newIsolateScopeDirective or templateDirective - combining templates with
                                           //   element transclusion doesn't make sense.
                                           //
@@ -8230,7 +8230,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
           // For directives with element transclusion the element is a comment,
           // but jQuery .data doesn't support attaching data to comment nodes as it's hard to
           // clean up (http://bugs.jquery.com/ticket/8335).
-          // Instead, we save the Controllers for the element in a local hash and attach to .data
+          // Instead, we save the controllers for the element in a local hash and attach to .data
           // later, once we have the actual element.
           elementControllers[directive.name] = controllerInstance;
           if (!hasElementTranscludeDirective) {
@@ -9074,7 +9074,7 @@ function $ControllerProvider() {
   /**
    * @ngdoc method
    * @name $controllerProvider#register
-   * @param {string|Object} name Controller name, or an object map of Controllers where the keys are
+   * @param {string|Object} name Controller name, or an object map of controllers where the keys are
    *    the names and the values are the constructors.
    * @param {Function|Array} constructor Controller constructor fn (optionally decorated with DI
    *    annotations in the array notation).
@@ -11725,7 +11725,7 @@ var locationPrototype = {
    * [RFC 3986](http://www.ietf.org/rfc/rfc3986.txt).
    *
    *
-   * ```js
+   * ```javascripts
    * // given url http://example.com/#/some/path?foo=bar&baz=xoxo
    * var absUrl = $location.absUrl();
    * // => "http://example.com/#/some/path?foo=bar&baz=xoxo"
@@ -11747,7 +11747,7 @@ var locationPrototype = {
    * Change path, search and hash, when called with parameter and return `$location`.
    *
    *
-   * ```js
+   * ```javascripts
    * // given url http://example.com/#/some/path?foo=bar&baz=xoxo
    * var url = $location.url();
    * // => "/some/path?foo=bar&baz=xoxo"
@@ -11779,7 +11779,7 @@ var locationPrototype = {
    * Return protocol of current url.
    *
    *
-   * ```js
+   * ```javascripts
    * // given url http://example.com/#/some/path?foo=bar&baz=xoxo
    * var protocol = $location.protocol();
    * // => "http"
@@ -11801,7 +11801,7 @@ var locationPrototype = {
    * Note: compared to the non-angular version `location.host` which returns `hostname:port`, this returns the `hostname` portion only.
    *
    *
-   * ```js
+   * ```javascripts
    * // given url http://example.com/#/some/path?foo=bar&baz=xoxo
    * var host = $location.host();
    * // => "example.com"
@@ -11827,7 +11827,7 @@ var locationPrototype = {
    * Return port of current url.
    *
    *
-   * ```js
+   * ```javascripts
    * // given url http://example.com/#/some/path?foo=bar&baz=xoxo
    * var port = $location.port();
    * // => 80
@@ -11852,7 +11852,7 @@ var locationPrototype = {
    * if it is missing.
    *
    *
-   * ```js
+   * ```javascripts
    * // given url http://example.com/#/some/path?foo=bar&baz=xoxo
    * var path = $location.path();
    * // => "/some/path"
@@ -11878,7 +11878,7 @@ var locationPrototype = {
    * Change search part when called with parameter and return `$location`.
    *
    *
-   * ```js
+   * ```javascripts
    * // given url http://example.com/#/some/path?foo=bar&baz=xoxo
    * var searchObject = $location.search();
    * // => {foo: 'bar', baz: 'xoxo'}
@@ -11956,7 +11956,7 @@ var locationPrototype = {
    * Changes the hash fragment when called with a parameter and returns `$location`.
    *
    *
-   * ```js
+   * ```javascripts
    * // given url http://example.com/#/some/path?foo=bar&baz=xoxo#hashValue
    * var hash = $location.hash();
    * // => "hashValue"
@@ -14897,7 +14897,7 @@ function qFactory(nextTick, exceptionHandler) {
    * current promise, you have to "rethrow" the error by returning a rejection constructed via
    * `reject`.
    *
-   * ```js
+   * ```javascripts
    *   promiseB = promiseA.then(function(result) {
    *     // success: do something and resolve promiseB
    *     //          with the old or a new result
@@ -15233,7 +15233,7 @@ function $RootScopeProvider() {
      *
      * # Inheritance
      * A scope can inherit from a parent scope, as in this example:
-     * ```js
+     * ```javascripts
          var parent = $rootScope;
          var child = parent.$new();
 
@@ -15405,7 +15405,7 @@ function $RootScopeProvider() {
        *
        *
        * # Example
-       * ```js
+       * ```javascripts
            // let's assume that scope was dependency injected as the $rootScope
            var scope = $rootScope;
            scope.name = 'misko';
@@ -15617,7 +15617,7 @@ function $RootScopeProvider() {
        *
        *
        * # Example
-       * ```js
+       * ```javascripts
           $scope.names = ['igor', 'matias', 'misko', 'james'];
           $scope.dataCount = 4;
 
@@ -15801,7 +15801,7 @@ function $RootScopeProvider() {
        * iterations exceeds 10.
        *
        * Usually, you don't call `$digest()` directly in
-       * {@link ng.directive:ngController Controllers} or in
+       * {@link ng.directive:ngController controllers} or in
        * {@link ng.$compileProvider#directive directives}.
        * Instead, you should call {@link ng.$rootScope.Scope#$apply $apply()} (typically from within
        * a {@link ng.$compileProvider#directive directive}), which will force a `$digest()`.
@@ -15813,7 +15813,7 @@ function $RootScopeProvider() {
        * In unit tests, you may need to call `$digest()` to simulate the scope life cycle.
        *
        * # Example
-       * ```js
+       * ```javascripts
            var scope = ...;
            scope.name = 'misko';
            scope.counter = 0;
@@ -16031,7 +16031,7 @@ function $RootScopeProvider() {
        * expressions.
        *
        * # Example
-       * ```js
+       * ```javascripts
            var scope = ng.$rootScope.Scope();
            scope.a = 1;
            scope.b = 2;
@@ -16115,7 +16115,7 @@ function $RootScopeProvider() {
        * ## Life cycle
        *
        * # Pseudo-Code of `$apply()`
-       * ```js
+       * ```javascripts
            function $apply(expr) {
              try {
                return $eval(expr);
@@ -16549,7 +16549,7 @@ var SCE_CONTEXTS = {
   // RESOURCE_URL is a subtype of URL used in contexts where a privileged resource is sourced from a
   // url.  (e.g. ng-include, script src, templateUrl)
   RESOURCE_URL: 'resourceUrl',
-  JS: 'js'
+  JS: 'javascripts'
 };
 
 // Helper functions follow.
@@ -16811,7 +16811,7 @@ function $SceDelegateProvider() {
      * See {@link ng.$sce $sce} for enabling strict contextual escaping.
      *
      * @param {string} type The kind of context in which this value is safe for use.  e.g. url,
-     *   resourceUrl, html, js and css.
+     *   resourceUrl, html, javascripts and stylesheets.
      * @param {*} value The value that that should be considered trusted/safe.
      * @returns {*} A value that can be used to stand in for the provided `value` in places
      * where Angular expects a $sce.trustAs() return value.
@@ -17255,7 +17255,7 @@ function $SceProvider() {
    *
    * Inheritance happens to capture this in a natural way.  In some future, we
    * may not use inheritance anymore.  That is OK because no code outside of
-   * sce.js and sceSpecs.js would need to be aware of this detail.
+   * sce.javascripts and sceSpecs.javascripts would need to be aware of this detail.
    */
 
   this.$get = ['$parse', '$sceDelegate', function(
@@ -23094,7 +23094,7 @@ var ngClassEvenDirective = classDirective('Even', 1);
         <div id="template2" class="ng-cloak">{{ 'world' }}</div>
      </file>
      <file name="protractor.js" type="protractor">
-       it('should remove the template directive and css class', function() {
+       it(stylesheets, function() {
          expect($('#template1').getAttribute('ng-cloak')).
            toBeNull();
          expect($('#template2').getAttribute('ng-cloak')).
@@ -24394,7 +24394,7 @@ var ngIncludeDirective = ['$templateRequest', '$anchorScroll', '$animate',
               ctrl.template = response;
 
               // Note: This will also link all children of ng-include that were contained in the original
-              // html. If that content contains Controllers, ... they could pollute/change the scope.
+              // html. If that content contains controllers, ... they could pollute/change the scope.
               // However, using ng-include on an element with additional content does not make sense...
               // Note: We can't remove them in the cloneAttchFn of $transclude as that
               // function is called before linking the content, which would apply child
@@ -29015,4 +29015,4 @@ $provide.value("$locale", {
 
 })(window, document);
 
-!window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
+!window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-clstylesheets],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
