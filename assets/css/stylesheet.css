@@ -1,0 +1,59 @@
+
+body {
+	color: yellow;
+	margin: 0;
+	font: 1em/1.5 Helvetica, Arial, Sans-serif;
+	background-color: lightgreen;
+}
+
+h1 {
+	font-size: 5.625rem; /*px--90px/16px--em*/
+	text-shadow: 10px 5px 5px rgba(0, 0, 0, 1);
+}
+
+h2 {
+	font-size: 2rem; /*60px/16em*/
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 1.875rem; /*30px/16em*/
+	font-weight: normal;
+
+}
+
+img {
+
+}
+
+/*Class Selectors*/
+
+.main-header {
+  	padding-top: 140px;
+  	height: 600px;
+  	text-align: center;
+  	background-image: url("salad.jpg"); 
+  	background-size: cover;
+  	box-shadow: inset 0 0 40px 15px black;
+
+}
+
+.main-header h3 {
+	text-shadow: 5px 5px 2px black;
+}
+
+.try {
+	color: white;
+	text-align: center;
+	margin: 5% 15%;
+	padding-top: 75px;
+	max-width: 100%;
+	text-align: center;
+}
+
+.try img {
+	width: 640px;
+	max-width: 100%;
+	box-shadow: 15px 10px 15px 2px black; 
+	border-radius: 20px;
+}
