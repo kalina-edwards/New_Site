@@ -1,10 +1,8 @@
 
 body {
-	color: yellow;
 	margin: 0;
 	font: 1em/1.5 Helvetica, Arial, Sans-serif;
-	background-color: lightgreen;
-}
+		}
 
 h1 {
 	font-size: 5.625rem; /*px--90px/16px--em*/
@@ -14,6 +12,8 @@ h1 {
 h2 {
 	font-size: 2rem; /*60px/16em*/
 	font-weight: normal;
+	text-decoration: underline;
+
 }
 
 h3 {
@@ -22,38 +22,78 @@ h3 {
 
 }
 
-img {
-
+a {
+	color: lightgreen;
+	text-decoration: none;
 }
 
+a:hover {
+	color: pink;
+}
+
+a:active {
+	color: lightblue;
+}
 /*Class Selectors*/
 
 .main-header {
   	padding-top: 140px;
   	height: 600px;
   	text-align: center;
-  	background-image: url("../imgs/salad.jpg");
+  	background: linear-gradient(lightgreen, transparent 70%),
+  	 url("../imgs/salad.jpg");
   	background-size: cover;
   	box-shadow: inset 0 0 40px 15px black;
-
+  	color: yellow;
 }
 
 .main-header h3 {
 	text-shadow: 5px 5px 2px black;
 }
 
-.try {
+
+
+.item {
+	color: black;
+	text-align: center;
+	height: 690px;
+	margin: 5%;	
+	float: left;
+	width: 420px;
+	max-width: 100%;
+	text-align: center;
+	box-shadow: 15px 10px 15px 2px black; 
+	border-radius: 20px;
+}
+
+.item img {
+	width: 420px;
+	max-width: 100%;
+	box-shadow: 15px 10px 15px 2px black; 
+	border-radius: 20px;
+}
+
+
+
+./*protein {
 	color: white;
 	text-align: center;
 	margin: 5% 15%;
-	padding-top: 75px;
+	width: 800px;
 	max-width: 100%;
 	text-align: center;
 }
 
-.try img {
-	width: 640px;
+.protein img {
+	width: 800px;
 	max-width: 100%;
 	box-shadow: 15px 10px 15px 2px black; 
-	border-radius: 20px;
+	/*border-radius: 20px;*/
+}
+
+.group:after {
+  content:"";
+  display: table;
+  clear: both;
+  background-color: white;
 }
