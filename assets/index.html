@@ -2,47 +2,55 @@
 <html>
 <head>
   <title>Vegan Girl</title>
+  <link rel="stylesheet" href="stylesheets/normalize.css">
   <link rel="stylesheet" href="stylesheets/stylesheet.css">
+  <meta name="viewport" content="width=device-width">
 </head>
 
  <!-- HEAD -->
 <body ng-app="app" ng-controller="GlobalCtrl">
-  <div class="main-header">
+ 
+<!--Main Header-->
+<div class="main-header">
 	<h3>Journey to a Healthier Lifestyle</h3>
-      <h1>Let's Go, Vegan</h1>
-  </div>
-  <div class="group">
-    <div class="item" id="strawberry">
-  	<img src="imgs/food.jpeg" alt="strawberries">
-  		<span class="">
-        <h2>Why Should I Eat Fruit?</h2>
-          <p>
-          Eating fruit is very essential to our body. From personal experience I have gained so many benefits from adding fruit into my daily lifestyle. The number one benefit I gained from eating fruit is having more energy. Eating fruit provided me with so much energy to do more activities as well as being more focused while working on projects. It definitely gives me longevity! Eat More Fruit!!! That is my advice to you!
-          </p>
-      </span>
-    </div>
-    <div class="item" id="animals">
-    <img src="imgs/cows.jpeg" alt="strawberries">
-      <span class="">
-        <h2>What's wrong with eating animals?</h2>
-          <p>
-          According to <a href="http://www.happycow.net/why_vegetarian.html" target="blank">Happy Cow:</a>
-          <blockquote cite="http://www.happycow.net/why_vegetarian.html">"In modern factory farms, animals are routinely injected with hormones and stimulants to make them grow bigger and faster. Many dairy ranchers use recombinant bovine growth hormone (rBGH) to enhance milk production, despite the fact that this chemical - which has been implicated in causing cancer and other diseases - shows up in milk."
-          </blockquote>
-          </p>
-      </span>
-    </div>
-    <div class="item" id="protein">
-    <img src="imgs/almonds.jpeg" alt="strawberries">
-      <span class="">
-        <h2>If not animals, where does my protein come from?</h2>
-          <p>
-          Eating fruit is very essential to our body. From personal experience I have gained so many benefits from adding fruit into my daily lifestyle. The number one benefit I gained from eating fruit is having more energy. Eating fruit provided me with so much energy to do more activities as well as being more focused while working on projects. It definitely gives me longevity! Eat More Fruit!!! That is my advice to you!
-          </p>
-      </span>
-    </div>
+  <h1>Let's Go, Vegan</h1>
   </div>
 
+<!--Main Content-->
+<div class="main-content">
+  <div class=" primary col">
+  	<img src="imgs/food.jpeg" alt="strawberries">
+      <h2>Why Should I Eat Fruit?</h2>
+        <p>
+          Eating fruit is very essential to our body. From personal experience I have gained so many benefits from adding fruit into my daily lifestyle. The number one benefit I gained from eating fruit is having more energy. Eating fruit provided me with so much energy to do more activities as well as being more focused while working on projects. It definitely gives me longevity! Eat More Fruit!!! That is my advice to you!
+        </p>
+  </div>
+
+  <div class="secondary col">
+    <img src="imgs/cows.jpeg" alt="Cows">
+      <h2>What's wrong with eating animals?</h2>
+      <p>
+        According to <a href="http://www.happycow.net/why_vegetarian.html" target="blank">Happy Cow:</a>
+        <blockquote cite="http://www.happycow.net/why_vegetarian.html">"In modern factory farms, animals are routinely injected with hormones and stimulants to make them grow bigger and faster. Many dairy ranchers use recombinant bovine growth hormone (rBGH) to enhance milk production, despite the fact that this chemical - which has been implicated in causing cancer and other diseases - shows up in milk."
+        </blockquote>
+      </p>
+  </div>
+
+  <div class="third col">
+    <img src="imgs/almonds.jpeg" alt="Almonds">
+      <h2>So where does my protein come from?</h2>
+        <p>
+          There are plenty of natural foods that provide protein. Here is a list from <a href="http://www.vrg.org/nutrition/protein.php" target="blank">The Vegetarian Resource Group</a> with the foods amount of protein in grams!
+        </p>
+        <ul>
+          <li>Soybeans, cooked, 1 cup: 29 grams</li>
+          <li>Black Beans, cooked, 1 cup: 15 grams</li>
+          <li>Quinoa, cooked, 1 cup: 8 grams</li>
+          <li>Veggie burger, 1 patty: 13 grams</li>
+          <li>Almonds, 1/4 cup: 8 grams</li>
+        </ul>
+  </div>
+</div>
     <script src="javascripts/vendor/angular.js"></script>
     <script src="javascripts/app.js"></script>
     <script src="javascripts/controllers/GlobalController.js"></script>
