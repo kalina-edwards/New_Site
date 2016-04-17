@@ -19,5 +19,9 @@
   "dependencies": {
     "angular": "^1.5.2",
     "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "angular": "^1.5.3",
+    "express": "^4.13.4"
   }
 }
