@@ -96,11 +96,13 @@ li {
 
 	.main-content {
 		background: rgba(135, 206, 250, .7);
+		width: 100%;
+		margin: 0 auto;
 	}
 
 	.col {
 		display: inline-block; /*Aligning the divs in a block*/
-		width: 33.33%; /*Fluid Width*/
+		width: 50%; /*Fluid Width*/
 		margin-right: -5px;
 		vertical-align: top;
 		padding-left: 1em;
@@ -127,6 +129,20 @@ li {
 
 	li {
 		list-style-type: disc;
+	}
+
+}
+
+@media (min-width: 1025px) {
+
+	.col {
+		display: inline-block; /*Aligning the divs in a block*/
+		width: 33.33%; /*Fluid Width*/
+		margin-right: -5px;
+		vertical-align: top;
+		padding-left: 1em;
+		padding-right: 1em;
+		border-radius: 20px;
 	}
 
 }
