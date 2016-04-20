@@ -7,9 +7,8 @@
 }
 
 body {
-	margin: 0;
 	font: 1em/1.5 Helvetica, Arial, Sans-serif;
-		}
+	margin: 2px 4px;
 
 h1 {
 	font-size: 3rem; /*px--90px/16px--em*/
@@ -58,6 +57,7 @@ li {
 }
 
 
+
 /* ================================= 
   Class Selectors
 ==================================== */
@@ -85,6 +85,11 @@ li {
 
 @media (min-width: 769px) {
 
+	body{
+		margin: 0;
+		font: 1em/1.5 Helvetica, Arial, Sans-serif; 
+	}
+
 	.main-header {
 		height: 600px;
 	}
@@ -94,9 +99,14 @@ li {
 		text-shadow: 10px 5px 5px rgba(0, 0, 0, 1);
 	}
 
+	h3 {
+		font-size: 2em; /*32px/16px*/
+	}
+
 	.main-content {
 		background: rgba(135, 206, 250, .7);
 		width: 100%;
+		/*max-width: 1024px;*/
 		margin: 0 auto;
 	}
 
@@ -119,7 +129,6 @@ li {
 
 	p,
 	blockquote {
-		font-size: 1em;
 		margin-bottom: 1.5em;
 	}
 
@@ -135,14 +144,15 @@ li {
 
 @media (min-width: 1025px) {
 
+
 	.col {
 		display: inline-block; /*Aligning the divs in a block*/
 		width: 33.33%; /*Fluid Width*/
-		margin-right: -5px;
 		vertical-align: top;
 		padding-left: 1em;
 		padding-right: 1em;
-		border-radius: 20px;
+	}
+
 	}
 
 }
