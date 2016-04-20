@@ -9,6 +9,7 @@
 body {
 	font: 1em/1.5 Helvetica, Arial, Sans-serif;
 	margin: 2px 4px;
+	}
 
 h1 {
 	font-size: 3rem; /*px--90px/16px--em*/
@@ -129,6 +130,7 @@ li {
 
 	p,
 	blockquote {
+		font-size: 1.5625em; /*20px/16px*/;
 		margin-bottom: 1.5em;
 	}
 
@@ -142,20 +144,35 @@ li {
 
 }
 
+
+
 @media (min-width: 1025px) {
 
+
+	p,
+	blockquote,
+	ul {
+		font-size: 1.25em; /*25px/16px*/
+	}
 
 	.col {
 		display: inline-block; /*Aligning the divs in a block*/
 		width: 33.33%; /*Fluid Width*/
+		margin-left: -10px;
+		margin-right: 5px;
 		vertical-align: top;
 		padding-left: 1em;
 		padding-right: 1em;
 	}
 
+	.col img {
+		width: 420px;
+		max-width: 100%;
+		box-shadow: 15px 10px 15px 2px black; 
 	}
 
 }
+
 
 
 
