@@ -105,9 +105,8 @@ li {
 	}
 
 	.main-content {
-		background: rgba(135, 206, 250, .7);
+		background: rgba(0, 0, 0, .2);
 		width: 100%;
-		/*max-width: 1024px;*/
 		margin: 0 auto;
 	}
 
