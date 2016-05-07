@@ -1,6 +1,9 @@
-#Vegan Site
+## What is Vegan Site?
+Vegan site is a single page website that gives you a few tips on how to go vegan.
 
-##Dev Team
+## Why?
+We built mainly because we really wanted to work together on a project.
 
-- kalina-edwards
-- constsync
+## Core Development Team
+1. Kalina Edwards (kalina-edwards)
+2. Tim McKyer (constsync)
