@@ -10,18 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/kalina-edwards/New_Site.git"
   },
-  "author": "Kalina Edwards and constsync",
-  "license": "ISC",
+  "author": "Kalina Edwards",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kalina-edwards/New_Site/issues"
   },
   "homepage": "https://github.com/kalina-edwards/New_Site#readme",
   "dependencies": {
     "angular": "^1.5.2",
-    "express": "^4.13.4"
-  },
-  "devDependencies": {
-    "angular": "^1.5.3",
     "express": "^4.13.4"
   }
 }
